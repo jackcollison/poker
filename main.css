@@ -1,0 +1,239 @@
+.game{
+    background: #477148;
+    width: 100%;
+    height: 100%;
+}
+
+.log{
+    size: 80px;
+    color: black;
+}
+
+.game-body{
+  width: 100%;
+}
+
+#toggle_sidebar{
+  background: #477148;
+  border: none;
+  font-size: 24px;
+}
+
+.btn{
+    border:none;
+    padding: 10px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    display: block;
+    width: 120px;
+    margin-top: 2px;
+    background:#222;
+    color:white !important;
+}
+
+.btn:hover{
+    background:dodgerblue;
+}
+
+h3
+{
+    padding: 10px;
+    color:black;
+    font-size: 36px;
+}
+
+.game-options
+{
+    text-align:center;
+    display: block;
+    position: absolute;
+    left: -200px;
+    transition: all 0.5s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.game-options.collapsed {
+    left: 0;
+}
+
+.card{
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    padding: 10px;
+    border: solid 1px #808080;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 3px;
+    border:solid 3px;
+    -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+}
+
+.card:hover
+{
+   -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+    animation: shift-up 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shift-up{
+    from{ margin-top: 0px; } to { margin-top: -20px; }
+}
+
+.spread {
+  width: 350px;
+  height: 250px;
+  position: relative;
+}
+ 
+.spread > .card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: top 0.3s ease, left 0.3s ease;
+  -moz-transition: top 0.3s ease, left 0.3s ease;
+  -o-transition: top 0.3s ease, left 0.3s ease;
+  -ms-transition: top 0.3s ease, left 0.3s ease;
+  transition: top 0.3s ease, left 0.3s ease;
+}
+
+.spread #card_0_0, #card_0_1 {
+    top: 11px;
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+ 
+.spread #card_1_0, #card_1_1{
+  left: 30px;
+  top: 2px;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+ 
+.spread #card_2_0, #card_2_1 {
+  left: 60px;
+  top: 0spx;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+ 
+.spread #card_3_0, #card_3_1 {
+  left: 90px;
+  top: 6px;
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.spread #card_4_0, #card_4_1 {
+  left: 118px;
+  top: 16px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.status
+{
+    display: inline-block;
+    background: white;
+    opacity: .6;
+    border: solid 5px white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display:none;
+    margin-left: 40.5%;
+    text-align: center;
+}
+
+
+.players{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.player{
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin:1%;
+    vertical-align: top;
+
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+    background: white;
+    visibility: hidden;
+    opacity: .6;
+}
+
+td, th {
+    border: 1px solid black;
+    opacity: 1;
+}
+
+.recommendation{
+  visibility: hidden;
+  background: white;
+  opacity: .6;
+  border: 1px solid black;
+  margin: 10px;
+  width: 94.5%;
+}
+
+.points{
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 10px;
+    color: black;
+}
+
+.deck{
+    background: white;
+    color:#222;
+    float: left;
+    width: 50px;
+    height: 80px;
+    padding: 10px;
+    border: double 5px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 10pt;
+    text-align: center;
+    margin: 10px;
+    border:solid 3px;
+    word-wrap: break-word;
+    -webkit-box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 7px rgba(0,0,0,0.3);
+}
